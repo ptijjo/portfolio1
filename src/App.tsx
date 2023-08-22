@@ -1,10 +1,8 @@
-import React from 'react';
+import RouterDom from './components/RouterDom';
 
 const App = () => {
   return (
-    <div>
-
-    </div>
+    <RouterDom />
   );
 };
 

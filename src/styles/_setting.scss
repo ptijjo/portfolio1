@@ -1,0 +1,30 @@
+// Couleurs
+$color-1: rgb(255, 224, 166);
+$color-2: purple;
+/*_____________________________________________________________*/
+
+//Police
+$police-1: "Montserrat", sans-serif;
+$police-2: "Gloock", serif;
+/*_____________________________________________________________*/
+
+//Arrangements
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  //overflow: hidden;
+  font-family: $police-1;
+}
+
+#root,
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
