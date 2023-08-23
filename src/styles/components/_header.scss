@@ -45,3 +45,15 @@
 .noheader {
   display: none;
 }
+
+@media screen and (max-width: 780px) {
+  .header {
+    p {
+      cursor: auto;
+    }
+
+    nav {
+      display: none;
+    }
+  }
+}

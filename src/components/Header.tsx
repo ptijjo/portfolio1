@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import MenuMobile from './MenuMobile';
 
 const Header = () => {
 
@@ -16,6 +17,7 @@ const Header = () => {
                     <li onClick={() => (navigate("/contact"))}>Contact</li>
                 </ul>
             </nav>
+            <MenuMobile />
         </div>
     );
 };
