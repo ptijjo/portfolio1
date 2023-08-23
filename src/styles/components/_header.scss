@@ -1,3 +1,47 @@
 .header {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  background-color: black;
+  color: white;
+
+  p {
+    width: 40%;
+    display: flex;
+    cursor: pointer;
+  }
+
+  nav {
+    display: flex;
+    width: 60%;
+    margin: 0;
+    justify-content: flex-end;
+
+    ul {
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      justify-content: flex-end;
+
+      li {
+        font-variant: normal;
+        transition: 0.4s ease-in-out;
+        cursor: pointer;
+        &:hover {
+          color: blue;
+          scale: 1.1;
+          border-bottom: 2px solid blue;
+          transition: 0.4s linear;
+        }
+      }
+    }
+  }
+}
+
+.noheader {
+  display: none;
 }

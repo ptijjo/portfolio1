@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Loader = () => {
-
-
     const [loader, setLoader] = useState(true);
+    const navigate = useNavigate()
 
     setInterval(() => {
         setLoader(false)
-    }, 4000)
+    }, 5000);
+
+    navigate("/home")
 
     return (
         <div className={(loader) ? 'loader' : "noloader"}>

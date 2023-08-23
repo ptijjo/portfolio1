@@ -3,4 +3,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: homePage 1s ease-in-out;
+
+  @keyframes homePage {
+    0% {
+      transform: translateY(100vh);
+    }
+  }
 }
