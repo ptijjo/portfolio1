@@ -1,0 +1,16 @@
+.effetSouris{
+
+    border: 1px solid blue;
+    border-radius: 50%;
+    width: 62px;
+    aspect-ratio: 1/1;
+    position: absolute;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: 500ms ease-out;
+  z-index: 2;
+  &.hovered {
+    width: 30px;
+    height: 30px;
+  }
+}

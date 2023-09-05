@@ -1,0 +1,48 @@
+.social{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background-color: $color-1;
+    position: fixed;
+    left: 0;
+    top: 50vh;
+    width: 60px;
+    aspect-ratio: 1/2;
+    
+
+    i{
+        font-size: xx-large;
+        animation: 1s linear;
+        
+        cursor: pointer;
+
+       
+        &:hover{
+            scale: 1.3;
+            color: $color-3;
+            animation: social 1s linear;
+
+            @keyframes social {
+                0%{
+                    transform: rotateZ(0deg);
+                }
+    
+                30%{
+                    transform: rotateZ(15deg);
+                }
+                50%{
+                    transform: rotateZ(0deg);
+                }
+
+                80%{
+                    transform: rotateZ(-15deg);
+                }
+                100%{
+                    transform: rotateZ(0deg);
+                }
+            }
+        }
+    }
+    
+}

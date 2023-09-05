@@ -1,0 +1,40 @@
+.defiler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 38px;
+    position: absolute;
+    top: 95vh;
+    z-index: 0;
+    .cage{
+        width: 25px;
+        height: 40px;
+        margin: 0;
+        border: 2px solid black;
+
+        border-radius: 40%;
+
+        .balle{
+            background-color: black;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            animation: balle 1s linear infinite;
+            position: relative;
+            top: 3px;
+            @keyframes balle {
+                0%{
+                    transform: translateY(0);
+                    opacity: 0;
+                }
+
+                100%{
+                    transform: translateY(25px);
+                    opacity: 100;
+                }
+                
+            }
+        }
+    }
+}

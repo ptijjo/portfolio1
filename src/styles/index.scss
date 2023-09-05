@@ -2,9 +2,16 @@
 
 // Components
 @import "./components/header";
-@import "./components/menuMobile";
+@import "./components/effetSouris";
+@import "./components/accueil";
+@import "./components/defiler";
+@import "./components/social";
+@import "./components/about";
+@import "./components/projet";
+@import "./components/loader";
+@import "./components/contact";
 
 // Pages
-@import "./pages/loader";
+
 @import "./pages/home";
 @import "./pages/errorPage";

@@ -4,24 +4,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  animation: homePage 1s ease-in-out;
+  animation: homePage 1.5s linear;
 
   @keyframes homePage {
     0% {
-      transform: translateY(100vh);
+     
+      opacity: 0;
     }
+    100%{
+     opacity: 100%;
+    }
+   
+   
   }
 
-  .maphoto {
-    width: 20%;
-    aspect-ratio: 1/1;
-    padding: 10px;
-    margin: 0;
-    img {
-      width: 100%;
-      object-fit: cover;
-      object-position: center center;
-      border-radius: 15px;
-    }
-  }
+}
+
+.notHome{
+  display: none;
 }

@@ -1,0 +1,47 @@
+.projet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: $color-4;
+
+    .image{
+        width: 60vh;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+        img{
+            width: 100%;
+            object-fit: cover;
+            object-position: center center;
+            transition: 0.4s ease-out;
+        }
+
+        .description {
+          position: absolute;
+          left: 35.9%;
+          top: 240vh;
+          width: 60vh;
+          line-height: 34px;
+          font-size: 1.5rem;
+          visibility: hidden;
+          transition: 0.5s ease;
+          transform: translateY(200px);
+        }
+
+        &:hover{
+            img {
+                transform: scale(1.1);
+                filter: opacity(15%) contrast(150%);
+              }
+
+              .description{
+                visibility: visible;
+              }
+        }
+    }
+}

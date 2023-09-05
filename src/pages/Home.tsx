@@ -1,17 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Header from '../components/Header';
-const avatar = require("../assets/_DSC4349 (5).JPG");
+import Accueil from '../components/Accueil';
+import Social from '../components/Social';
+import About from '../components/About';
+import Projet from '../components/Projet';
+import Contact from '../components/Contact';
 
 
 const Home = () => {
 
+    const [loader, setLoader] = useState(false);
+
+    setInterval(() => {
+        setLoader(true)
+    }, 5500);
+
+
     return (
-        <div className='home'>
+        <main className={(!loader) ? "notHome" : 'home'}>
+
             <Header />
-            <div className='maphoto'>
-                <img src={avatar} alt="ibahima Bangoura" />
-            </div>
-        </div>
+            <Accueil />
+            <Social />
+            <About />
+            <Projet />
+            <Contact />
+        </main>
     );
 };
 
