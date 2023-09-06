@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import data from "../data/Data";
-import Contact from './Contact';
+
 
 
 const Projet = () => {
@@ -14,7 +14,6 @@ const Projet = () => {
 
         if (projet >= data.length - 1) setProjet(0);
     }
-
 
 
     return (
