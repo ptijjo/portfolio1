@@ -15,5 +15,41 @@
         flex-direction: column;
         width: 100%;
         aspect-ratio: 3/1;
+        
+
+        input{
+            width: 15%;
+            aspect-ratio: 6/1;
+            margin: 0 0 10px 0;
+            border-radius: 10px;
+            border: none;
+            text-align: center;
+            &:focus{
+                color:blue;
+                &:invalid{
+                    background-color: red;
+                    color: black;
+            }
+           
+            }
+            
+        }
+
+        textarea{
+            width: 15%;
+            aspect-ratio: 4/1;
+            margin: 0 0 20px 0;
+        }
+
+        .button{
+            background-color: $color-3;
+            aspect-ratio: 4/1;
+            width: 12%;
+            transition: 0.4s linear;
+            &:hover{
+                background-color: lighten($color-3,5%);
+                
+            }
+        }
     }
 }

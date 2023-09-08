@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+const logo = require("../assets/profil.jpg");
 
 const Header = () => {
 
@@ -14,7 +14,7 @@ const Header = () => {
     return (
         <header className='header'>
             <div className='avatar'>
-                <img src="./assets/profil.jpg" alt="ibrahima Bangoura" />
+                <img src={logo} alt="ibrahima Bangoura" />
                 <p>Ibrahima BANGOURA</p>
             </div>
             <nav className='menuOrdi'>
