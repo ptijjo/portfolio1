@@ -19,7 +19,7 @@ const Data: projet[] = [
         stack: ["REACT", "CSS", "JAVASCRIPT"],
         github: "",
         url: "",
-        image: "public/assets/kasa/details.png",
+        image: "./assets/kasa/details.png",
         description: "Dans le dossier code_react_router vous retrouverez au format pdf le code des différentes routes disponibles de l'application. Dans le dossier code_react_kasa se trouve le code du site kasa.",
     },
     {
@@ -27,8 +27,8 @@ const Data: projet[] = [
         titre: "Créez une application de streaming de films ",
         stack: ["REACT", "SASS"],
         github: "",
-        url: "./assets/app_cinema/cinema.png",
-        image: "",
+        url: "",
+        image: "./assets/app_cinema/cinema.png",
         description: "",
     },
     {
@@ -46,7 +46,7 @@ const Data: projet[] = [
         stack: ["HTML", "SASS"],
         github: "",
         url: "",
-        image: "../assets/react_cook/reactCook.png",
+        image: "./assets/react_cook/reactCook.png",
         description: "",
     },
 

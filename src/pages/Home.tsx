@@ -7,7 +7,11 @@ import Projet from '../components/Projet';
 import Contact from '../components/Contact';
 
 
+
 const Home = () => {
+
+
+
 
     const [loader, setLoader] = useState(false);
 

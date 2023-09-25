@@ -19,11 +19,24 @@ const Projet = () => {
     return (
         <div className='projet' id='projet' onClick={handleClick}>
 
-            <span className='image'>
-                <img src={data[projet].image} alt="projet" />
-                <span className='description'>{data[projet].description}</span>
-            </span>
-
+            <section>
+                <h2>{data[projet].titre}</h2>
+                <ul>
+                    {data[projet].stack.map((stack, index) => (
+                        <li key={index}>{stack}</li>
+                    ))}
+                </ul>
+            </section>
+            <section>
+                <span className='image'>
+                    <img src={data[projet].image} alt="projet" />
+                    <span className='description'>{data[projet].description}</span>
+                </span>
+                <div>
+                    <p>{data[projet].github}</p>
+                    <p>{data[projet].url}</p>
+                </div>
+            </section>
         </div>
     );
 };
